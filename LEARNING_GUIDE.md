@@ -47,6 +47,12 @@ In modern games, pressing the `W` key shouldn't just mean "move forward". What i
    * **What it is:** The "Rules & Spawner" of the level.
    * **Why we need it:** Tells the game: *"Whenever a player clicks Play, automatically spawn our custom DrivingSimulatorVehicle and put the player in the driver's seat!"*
 
+### 5. Cross-Platform & Mobile Optimization (iOS & Android)
+How do high-end UE5 games run on phones?
+* **Same Code, Different Graphics:** The C++ vehicle physics and gear code we write runs **identically** on Mac, PC, iPhone, and Android.
+* **On-Screen Touch Controls:** Using **Enhanced Input**, we can add on-screen touch pedals (throttle, brake, clutch) and a virtual steering wheel for mobile devices!
+* **Scalability Presets:** UE5 has built-in Graphics Quality levels. For Mac/PC, we enable Lumen ray-tracing lighting. For Mobile, Unreal automatically switches to lightweight Mobile Forward Shading to keep frame rates smooth (60 FPS).
+
 ---
 
 ## 📝 Progress Log & Next Steps
@@ -56,7 +62,8 @@ In modern games, pressing the `W` key shouldn't just mean "move forward". What i
 | **Milestone 1** | 🔄 *In Progress* | Vehicle C++ Foundation, Enhanced Input Setup, Chase Camera, Reset Function | How C++ vehicle physics connects to UE5 and Blueprints |
 | **Milestone 2** | ⏳ *Pending* | Import 3D Car Model, Assign Wheel Blueprints, Basic Test Track | How 3D `.fbx` models & materials work inside Unreal Editor |
 | **Milestone 3** | ⏳ *Pending* | Manual Transmission, RPM, Torque Curve, Clutch Physics | Engine physics formulas & gear ratio mechanics |
+| **Future** | ⏳ *Planned* | Touch UI Pedals, Mobile Graphics Scalability & iOS/Android Export | Cross-platform export & mobile UI overlays |
 
 ---
 
-> 💡 **Tip:** Whenever we add a new system (clutch, gear ratios, audio, UI), this guide will be updated with simple explanations so you learn how game engines work as we build!
+> 💡 **Tip:** Whenever we add a new system (clutch, gear ratios, audio, UI, mobile touch controls), this guide will be updated with simple explanations so you learn how game engines work as we build!
