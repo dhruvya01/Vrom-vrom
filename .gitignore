@@ -1,0 +1,23 @@
+# Unreal Engine standard .gitignore
+
+# Binaries and intermediate build files
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# IDE files
+.vscode/
+.idea/
+*.xcworkspace
+*.xcodeproj
+*.sln
+*.suo
+
+# OS files
+.DS_Store
+
+# Large asset zips or temporary downloads (keep root clean)
+CAR GAME ASSETS/*.zip
+UE_5.8/
